@@ -46,14 +46,14 @@ li a:hover {
     </head>
     <body>
     <header class="header">
-        <h1>Future of Public Transportation</h1>
-        <nav>
+        <h1>Future of City Transportation</h1>
+            <!-- Inserting a navigation bar  -->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="problem.html">Problem</a></li>
                     <li><a href="current.html">Current network</a></li>
-                    <li><a href="improvements.html">Future improvements</a></li>
+                    <li><a href="improvements.html">Livable City</a></li>
                 </ul>
             </nav>
 
@@ -64,14 +64,15 @@ li a:hover {
     <div class="bg-light p-5 text-center">
         <h2>Current and planned network</h2>
         <p>Choose from the below options:</p>
+         <!-- Calling a function when the button is pressed  -->
         <button id="btn1" class="btn btn-primary" onclick="changeImage('present')" >Present</button>
         <button id="btn2" class="btn btn-success" onclick="changeImage('future')" >future</button>
       </div>
 
       <table>
         <tr>
-          <th>Company</th>
-          <th>Contact</th>
+          <th>Map of metro lines</th>
+
 
         </tr>
         <tr>
@@ -89,11 +90,11 @@ li a:hover {
       function changeImage(type) {
           var image_source = document.getElementById("image");
 
-
+           /* Creating variables to store the source of the images  */
           var presentImage = "https://www.hungarybudapestguide.com/wp-content/uploads/Budapest-metro-map.jpg";
           var futureImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/M5_metro_%C3%BAtvonal.png/250px-M5_metro_%C3%BAtvonal.png";
 
-
+          /* Changing the source of the image  */
           if (type === 'present') {
               image_source.src = presentImage;
               image_source.style.width = "";
